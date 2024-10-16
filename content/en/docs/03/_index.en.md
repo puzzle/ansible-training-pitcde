@@ -161,5 +161,5 @@ ansible node2 -i hosts -m file -a "path=/home/ansible/testfile.txt state=absent"
 
 ### All done?
 
-* [Puzzle Blog](https://www.puzzle.ch/blog)
+* [Puzzle Ansible Blog](https://www.puzzle.ch/de/blog/categories/technologien/ansible)
 * [Ansible Meetup Bern](https://www.meetup.com/Ansible-Bern/)
