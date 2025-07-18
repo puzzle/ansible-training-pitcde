@@ -161,5 +161,5 @@ ansible node2 -i hosts -m ansible.builtin.file -a "path=/home/ansible/testfile.t
 
 ### All done?
 
-* [Puzzle Ansible Blog](https://www.puzzle.ch/de/blog/categories/technologien/ansible)
+* [Puzzle Blog](https://www.puzzle.ch/blog)
 * [Ansible Meetup Bern](https://www.meetup.com/Ansible-Bern/)
