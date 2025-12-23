@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "/ansible/"
 title = "Ansible Schulung"
 
 enableGitInfo = true
