@@ -82,8 +82,8 @@ $ ansible-playbook webserver.yml
 ### Task 4
 
 * Create a new role called `base`.
-Its file `tasks/main.yml` should import the taskfiles `motd.yml` and `packages.yml` by using the `import_tasks` module. Create the two files `motd.yml` and `packages.yml` under `tasks/`.
-* Tag the import of the `motd.yml` file with the string `motd` and the import of the `packages.yml` file with the string `packages`.
+Its file `tasks/main.yml` should import the files `motd.yml` and `packages.yml`.
+(Create both files under `tasks/`).
 * `motd.yml` should do the following: Use the variable `base_motd_content` to change the `/etc/motd` content to
 "This is a server\\n".
 Remember to move the template as well as the variable to a correct location in the `roles` folder.
@@ -103,7 +103,7 @@ base_motd_content: "This is a server\n"
 $ ls roles/base/tasks/
 main.yml      motd.yml      packages.yml
 
-$ cat roles/base/templates/motd.j2
+$ cat roles/templates/motd.j2
 {{ base_motd_content }}
 IP ADDRESS: {{ ansible_default_ipv4.address }}
 OS:         {{ ansible_os_family }}
@@ -163,7 +163,6 @@ Take notice of the different content of `/etc/motd` on the control node!
 Use a dependency in the `meta/main.yml` file.
 * Remove the play to run `base` role on all hosts in the `prod.yml` playbook.
 Run the playbook and see if role `base` was applied on hosts in the `web` group as well.
-* Run the the playbook once with the tag `motd` and once with the tag `packages`. Ensure, that only the tasks where run where the corresponding tag was set.
 
 {{% details title="Solution Task 5" %}}
 
@@ -180,8 +179,6 @@ $ cat prod.yml
     - httpd
 
 $ ansible-playbook prod.yml
-$ ansible-playbook prod.yml -t motd
-$ ansible-playbook prod.yml -t packages
 ```
 
 {{% /details %}}
