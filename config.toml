@@ -63,7 +63,7 @@ url = "https://www.puzzle-itc.de"
 
 [params]
 copyright = "Puzzle ITC"
-github_repo = "https://github.com/puzzle/ansible-training"
+github_repo = "https://github.com/puzzle/ansible-training-pitcde"
 github_branch = "master"
 imagePrefix = "puzzle_"
 enabledModule = "base"
