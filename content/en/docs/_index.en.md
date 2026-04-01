@@ -1,5 +1,4 @@
 ---
-aliases = ['../']
 title: "Labs"
 weight: 2
 menu:
