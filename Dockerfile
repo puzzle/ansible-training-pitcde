@@ -6,9 +6,6 @@ WORKDIR /src
 COPY package.json package-lock.json* ./
 RUN npm ci
 
-COPY . .
-RUN npm run mdlint || true
-
 # Getting hugo page build
 FROM ghcr.io/hugomods/hugo:0.154.5 AS hugo-builder
 
