@@ -1,5 +1,5 @@
-baseurl = "/"
-title = "Ansible Training"
+baseurl = "/ansible/"
+title = "Ansible Schulung"
 
 enableGitInfo = true
 
@@ -64,7 +64,7 @@ url = "https://www.puzzle-itc.de"
 [params]
 copyright = "Puzzle ITC"
 github_repo = "https://github.com/puzzle/ansible-training-pitcde"
-github_branch = "master"
+github_branch = "main"
 imagePrefix = "puzzle_"
 enabledModule = "base"
 
