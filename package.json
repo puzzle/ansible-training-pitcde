@@ -1,10 +1,10 @@
 {
-  "name": "ansible-training",
+  "name": "ansible-schulung",
   "version": "0.0.9",
-  "description": "Ansible Training",
+  "description": "Ansible Schulung",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/puzzle/ansible-training.git"
+    "url": "git+https://github.com/puzzle/ansible-training-pitcde.git"
   },
   "author": "Puzzle ITC",
   "scripts": {
@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/puzzle/ansible-training/issues"
   },
-  "homepage": "https://github.com/puzzle/ansible-training#readme",
+  "homepage": "https://github.com/puzzle/ansible-training-pitcde#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.27",
     "husky": "9.1.7",
