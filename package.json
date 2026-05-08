@@ -1,0 +1,26 @@
+{
+  "name": "ansible-schulung",
+  "version": "0.0.9",
+  "description": "Ansible Schulung",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/puzzle/ansible-training-pitcde.git"
+  },
+  "author": "Puzzle ITC",
+  "scripts": {
+    "start": "bash -c \"docker run --rm --interactive --publish 8080:8080 -v $(pwd):/src:Z ghcr.io/hugomods/hugo:$(grep \"FROM ghcr.io/hugomods/hugo\" Dockerfile | sed 's/FROM ghcr.io\\/hugomods\\/hugo://g' | sed 's/ AS hugo-builder//g') server -p 8080 --bind 0.0.0.0\"",
+    "mdlint": "markdownlint --config .markdownlint.json content *.md",
+    "prepare": "husky install"
+  },
+  "bugs": {
+    "url": "https://github.com/puzzle/ansible-training/issues"
+  },
+  "homepage": "https://github.com/puzzle/ansible-training-pitcde#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.27",
+    "husky": "9.1.7",
+    "markdownlint-cli": "^0.48.0",
+    "postcss": "^8.5.8",
+    "postcss-cli": "^11.0.1"
+  }
+}
