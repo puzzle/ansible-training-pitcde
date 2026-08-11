@@ -11,7 +11,7 @@ FROM ghcr.io/hugomods/hugo:0.154.5 AS hugo-builder
 
 WORKDIR /src
 
-COPY --from=npm-builder /src/node_modules .
+COPY --from=npm-builder /src/node_modules ./node_modules
 COPY . .
 RUN hugo
 
